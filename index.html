@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Уровень сервиса</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -36,19 +44,36 @@
                     </a>
                   </li>
                   <li class="main-menu__li">
-                    <a href="#term" class="header__link link-hover"> Сроки </a>
-                  </li>
-                  <li class="main-menu__li">
-                    <a href="#photo-gallery" class="header__link link-hover">
+                    <a href="#term" class="header__link link-hover">
                       Сотрудничество
                     </a>
                   </li>
                   <li class="main-menu__li">
                     <a href="#photo-gallery" class="header__link link-hover">
-                      Контакты
+                      О нас
                     </a>
                   </li>
                 </ul>
+                <div class="main-menu__contacts-mob">
+                  <button type="button" class="main-btn">
+                    <span class="main-btn__icon-wrapper">
+                      <img
+                        class="main-btn__icon"
+                        src="img/icons/phone.svg"
+                        width="24"
+                        height="24"
+                        alt="телефон"
+                      />
+                    </span>
+                    <span class="main-btn__txt-wrapper">
+                      <span class="main-btn__txt"> заказать звонок </span>
+                    </span>
+                  </button>
+                  <div class="main-menu__contacts-mob-phone">
+                    Бесплатный звонок
+                    <a class="main-menu__contacts-mob-num" href="tel:8 495 003-23-31"> 8 495 003-23-31 </a>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
@@ -59,8 +84,8 @@
             >
             <div class="header__phone-wrap">
               <span class="header__phone-span">Бесплатный звонок</span>
-              <a class="header__phone-link" href="tel:8(929)570-18-64">
-                <span class="header__phone-txt">8(929)570-18-64</span>
+              <a class="header__phone-link" href="tel:8 495 003-23-31">
+                <span class="header__phone-txt">8 495 003-23-31</span>
                 <img
                   class="header__phone-icon"
                   alt="Позвонить"
@@ -72,13 +97,14 @@
         </div>
       </div>
     </header>
+
     <main class="main">
-      <section class="section section-main-offer">
+      <section class="section-main-offer">
         <div class="container">
           <h1 class="h1">
-            <span> УСТАНОВКА МЕЖКОМНАНТЫХ И ВХОДНЫХ ДВЕРЕЙ </span>
+            <span class="bold"> УСТАНОВКА МЕЖКОМНАНТЫХ И ВХОДНЫХ ДВЕРЕЙ </span>
             В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ
-            <span> ПОД КЛЮЧ ОТ ПРОФЕССИОНАЛОВ </span>
+            <span class="bold"> ПОД КЛЮЧ ОТ ПРОФЕССИОНАЛОВ </span>
           </h1>
           <div class="main-offer-bg">
             <div class="main-offer">
@@ -93,15 +119,18 @@
               </p>
               <div class="main-offer__btn-wrapper">
                 <button type="button" class="main-btn">
-                  <span>
+                  <span class="main-btn__icon-wrapper">
                     <img
+                      class="main-btn__icon"
                       src="img/icons/phone.svg"
                       width="24"
                       height="24"
                       alt="телефон"
                     />
                   </span>
-                  <span> заказать звонок </span>
+                  <span class="main-btn__txt-wrapper">
+                    <span class="main-btn__txt"> заказать звонок </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -110,26 +139,31 @@
       </section>
 
       <section class="section section-tips">
-        <div class="tips">
-          <span class="tips__item"> От 2790 рублей за дверь </span>
-          <span class="tips__item"> Бесплатный выезд мастера </span>
-          <span class="tips__item"> Установка за 1 день </span>
-          <span class="tips__item"> 45 бригад в Москве </span>
-          <span class="tips__item"> Гарантия 2 года на установку </span>
-          <span class="tips__item"> Уборка мусора после монтажа </span>
-        </div>
-        <div class="section-tips__btn-wrapper">
-          <button type="button" class="main-btn">
-            <span>
-              <img
-                src="img/icons/phone.svg"
-                width="24"
-                height="24"
-                alt="телефон"
-              />
-            </span>
-            <span> заказать звонок </span>
-          </button>
+        <div class="container">
+          <div class="tips">
+            <span class="tips__item"> От 2790 рублей за дверь </span>
+            <span class="tips__item"> Бесплатный выезд мастера </span>
+            <span class="tips__item"> Установка за 1 день </span>
+            <span class="tips__item"> 45 бригад в Москве </span>
+            <span class="tips__item"> Гарантия 2 года на установку </span>
+            <span class="tips__item"> Уборка мусора после монтажа </span>
+          </div>
+          <div class="section-tips__btn-wrapper">
+            <button type="button" class="main-btn">
+              <span class="main-btn__icon-wrapper">
+                <img
+                  class="main-btn__icon"
+                  src="img/icons/phone.svg"
+                  width="24"
+                  height="24"
+                  alt="телефон"
+                />
+              </span>
+              <span class="main-btn__txt-wrapper">
+                <span class="main-btn__txt"> заказать звонок </span>
+              </span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -414,16 +448,19 @@
                     <input class="file-upload" type="file" />
                   </div>
                   <div class="main-form__item main-form__item_btn">
-                    <button type="submit" class="main-btn">
-                      <span>
+                    <button type="button" class="main-btn">
+                      <span class="main-btn__icon-wrapper">
                         <img
+                          class="main-btn__icon"
                           src="img/icons/phone.svg"
                           width="24"
                           height="24"
                           alt="телефон"
                         />
                       </span>
-                      <span> отправить данные </span>
+                      <span class="main-btn__txt-wrapper">
+                        <span class="main-btn__txt"> заказать звонок </span>
+                      </span>
                     </button>
                   </div>
                 </div>
@@ -433,7 +470,7 @@
         </div>
       </section>
 
-      <section class="section-portfolio">
+      <section class="section section-portfolio">
         <div class="container">
           <h2 class="main-h2">
             <span class="main-h2__line">фото</span> выполненных работ
@@ -503,21 +540,24 @@
               />
             </div>
           </div>
-          <button type="submit" class="main-btn main-btn_portfolio">
-            <span>
+          <button type="button" class="main-btn">
+            <span class="main-btn__icon-wrapper">
               <img
+                class="main-btn__icon"
                 src="img/icons/phone.svg"
                 width="24"
                 height="24"
                 alt="телефон"
               />
             </span>
-            <span> отправить данные </span>
+            <span class="main-btn__txt-wrapper">
+              <span class="main-btn__txt"> заказать звонок </span>
+            </span>
           </button>
         </div>
       </section>
 
-      <section class="section-partners">
+      <section class="section section-partners">
         <div class="container">
           <h2 class="main-h2">
             <span class="main-h2__line">Работаем</span>с продукцией крупнейших
@@ -640,15 +680,18 @@
               </ul>
               <div class="partners__btn-wrapper">
                 <button type="button" class="main-btn">
-                  <span>
+                  <span class="main-btn__icon-wrapper">
                     <img
-                      src="img/icons/arrow.svg"
+                      class="main-btn__icon"
+                      src="img/icons/phone.svg"
                       width="24"
                       height="24"
                       alt="телефон"
                     />
                   </span>
-                  <span> показать все фабрики </span>
+                  <span class="main-btn__txt-wrapper">
+                    <span class="main-btn__txt"> заказать звонок </span>
+                  </span>
                 </button>
               </div>
             </div>
@@ -656,7 +699,7 @@
         </div>
       </section>
 
-      <section class="section-tools">
+      <section class="section section-tools">
         <div class="container">
           <h2 class="main-h2">
             <span class="main-h2__line">наши</span>инструменты и оборудование
@@ -753,22 +796,25 @@
                 </li>
               </ul>
               <button type="button" class="main-btn">
-                <span>
+                <span class="main-btn__icon-wrapper">
                   <img
-                    src="img/icons/arrow.svg"
+                    class="main-btn__icon"
+                    src="img/icons/phone.svg"
                     width="24"
                     height="24"
                     alt="телефон"
                   />
                 </span>
-                <span> показать все инструменты </span>
+                <span class="main-btn__txt-wrapper">
+                  <span class="main-btn__txt"> заказать звонок </span>
+                </span>
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-about">
+      <section class="section section-about">
         <div class="container">
           <div class="about">
             <div class="about__item">
@@ -792,8 +838,277 @@
           </div>
         </div>
       </section>
+
+      <section class="section section-simple-offer">
+        <div class="container">
+          <h2 class="main-h2">
+            <span class="main-h2__line">доверьте</span> установку дверей
+            профессионалам
+          </h2>
+          <div class="simple-offer">
+            <div class="simple-offer__item">
+              <form action="#" class="main-form">
+                <h3 class="main-form__title">Форма обратной связиы</h3>
+                <span class="main-form__sub-title">
+                  (Возможна загрузка до 3 фото)
+                </span>
+                <div class="main-form__body">
+                  <div class="main-form__item">
+                    <span class="main-form__input-descr"
+                      >имя (необязательно)</span
+                    >
+                    <input type="text" name="name" placeholder="Ваше имя" />
+                  </div>
+                  <div class="main-form__item">
+                    <span class="main-form__input-descr"
+                      >имя (необязательно)</span
+                    >
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="+7 (---) --- -- --"
+                      maxlength="11"
+                    />
+                  </div>
+                  <div class="main-form__item">
+                    <label for="file-upload" class="custom-file-upload">
+                      Custom Upload
+                    </label>
+                    <input class="file-upload" type="file" />
+                  </div>
+                  <div class="main-form__item main-form__item_btn">
+                    <button type="button" class="main-btn">
+                      <span class="main-btn__icon-wrapper">
+                        <img
+                          class="main-btn__icon"
+                          src="img/icons/phone.svg"
+                          width="24"
+                          height="24"
+                          alt="телефон"
+                        />
+                      </span>
+                      <span class="main-btn__txt-wrapper">
+                        <span class="main-btn__txt"> заказать звонок </span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="simple-offer__item">
+              <p class="simple-offer__text">
+                Напишите нами или оставьте заявку для точного расчета установки
+              </p>
+              <div class="simple-offer__contacts">
+                <a
+                  href="#"
+                  class="simple-offer__contact sales-form__contact_tg"
+                >
+                  telegram
+                </a>
+                <a
+                  href="#"
+                  class="simple-offer__contact sales-form__contact_wa"
+                >
+                  whatsapp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-noname-problems">
+        <div class="container">
+          <h2 class="main-h2">
+            <span class="main-h2__line">Что</span> бывает если двери
+            устанавливают непрофессионалы?
+          </h2>
+          <div class="noname-problems">
+            <div class="noname-problems__top">
+              <p class="noname-problems__top-txt">
+                Цена экономии - покупка новых дверей
+              </p>
+            </div>
+            <div class="tips noname-problems__tips">
+              <span class="tips__item"> Порча полотна </span>
+              <span class="tips__item"> Неправильно врезанная фурнитура </span>
+              <span class="tips__item"> Не работают замки </span>
+              <span class="tips__item"> Дверь установлена на по уровню </span>
+              <span class="tips__item"> Неправильные стыки полов </span>
+              <span class="tips__item"> Дешевая монтажная пена </span>
+            </div>
+            <div class="noname-problems__btn-wrapper">
+              <button type="button" class="main-btn">
+                <span class="main-btn__icon-wrapper">
+                  <img
+                    class="main-btn__icon"
+                    src="img/icons/phone.svg"
+                    width="24"
+                    height="24"
+                    alt="телефон"
+                  />
+                </span>
+                <span class="main-btn__txt-wrapper">
+                  <span class="main-btn__txt"> заказать звонок </span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tabs">
+        <style>
+          .row {
+            display: flex;
+          }
+          .row .col {
+            flex: 1;
+          }
+          .row .col:last-child {
+            margin-left: 1em;
+          }
+          /* Accordion styles */
+          .tabs {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+          }
+          .tab {
+            width: 100%;
+            color: white;
+            overflow: hidden;
+          }
+          .tab-label {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+            background: #2c3e50;
+            font-weight: bold;
+            cursor: pointer;
+            /* Icon */
+          }
+          .tab-label:hover {
+            background: #1a252f;
+          }
+          .tab-label::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all 0.35s;
+          }
+          .tab-content {
+            max-height: 0;
+            padding: 0 1em;
+            color: #2c3e50;
+            background: white;
+            transition: all 0.35s;
+          }
+          .tab-close {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            font-size: 0.75em;
+            background: #2c3e50;
+            cursor: pointer;
+          }
+          .tab-close:hover {
+            background: #1a252f;
+          }
+          input:checked + .tab-label {
+            background: #1a252f;
+          }
+          input:checked + .tab-label::after {
+            transform: rotate(90deg);
+          }
+          input:checked ~ .tab-content {
+            max-height: 100vh;
+            padding: 1em;
+          }
+        </style>
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1">Item 1</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
+              reiciendis!
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" id="chck2" />
+            <label class="tab-label" for="chck2">Item 2</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contacts">
+        <div class="container">
+          <h2 class="main-h2">
+            <span class="main-h2__line">Контакты</span>
+          </h2>
+          <!-- map -->
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__lines">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__item">
+              <img class="footer__logo" src="img/logo.svg" alt="логотип" />
+              <span class="footer__times"> Пн-Сб 9:00 — 19:00 </span>
+              <span class="footer__times"> Вс — выходной</span>
+            </div>
+            <div class="footer__item">
+              <span class="footer__txt"> ИП Кравцов Павел Владимирович </span>
+              <span class="footer__txt"> ИНН 272591542507 </span>
+              <span class="footer__txt"> ОГРНИП 317272400018503 </span>
+              <a href="#" class="footer__offer">
+                Не является публичной офертой
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__link" href="#">
+                <img src="img/icons/phone.svg" alt="телефон" />
+                <span> 8-495-145-78-88 </span>
+              </a>
+              <a class="footer__link" href="#">
+                <img src="img/icons/mail.svg" alt="почта" />
+                <span> 8-495-145-78-88 </span>
+              </a>
+              <a class="footer__link" href="#">
+                <img src="img/icons/geo.svg" alt="гео" />
+                <span> Егорьевский проезд, 2Ас7 </span>
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__link" href="#">
+                <img src="img/icons/tg.svg" alt="телеграмм" />
+                <span> TELEGRAM </span>
+              </a>
+              <a class="footer__link" href="#">
+                <img src="img/icons/whatsapp.svg" alt="вацап" />
+                <span> WHATSAPP </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p class="footer-rights">
+          Уровень Сервиса. Установка и замер межкомнатных дверей. Все права
+          защищены ©2005-2022
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
