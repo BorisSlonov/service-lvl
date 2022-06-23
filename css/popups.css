@@ -1,0 +1,62 @@
+.main-popup {
+  display: none;
+  border-radius: 8px;
+}
+
+.fancybox-content {
+  padding: 0;
+}
+
+.thanks-popup {
+  max-width: 620px;
+  border-radius: 8px;
+  padding: 30px 20px;
+}
+
+.thanks-popup__title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.thanks-popup__sub-title {
+  display: block;
+  color: var(--gray);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.thanks-popup__p {
+  font-size: 18px;
+  padding: 15px 0;
+  margin: 15px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.thanks-popup__btn {
+  background-color: var(--black);
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px 0;
+  transition: all 0.3s;
+  border: 1px solid var(--black);
+}
+
+.thanks-popup__btn:hover {
+  background-color: #fff;
+  color: var(--black);
+}
+
+.message {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.thanks-popup {
+  display: none;
+}

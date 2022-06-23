@@ -1,0 +1,182 @@
+.partners {
+  display: flex;
+}
+
+.partners__item:first-child {
+  max-width: 300px;
+  margin-right: 30px;
+}
+
+.partners__item:last-child {
+  width: 100%;
+}
+
+.partners__txt {
+  font-weight: 600;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  margin-top: -40px;
+}
+
+.partners-grid__item {
+  display: flex;
+  align-items: center;
+  flex-basis: 33.333%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.partners-grid__item  {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33.333%;
+}
+
+
+
+.partners-grid__item:nth-child(2)::before,
+.partners-grid__item:nth-child(5)::before,
+.partners-grid__item:nth-child(8)::before,
+.partners-grid__item:nth-child(11)::before,
+.partners-grid__item:nth-child(14)::before,
+.partners-grid__item:nth-child(17)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  background-color: var(--gray);
+}
+.partners-grid__item:nth-child(2)::after,
+.partners-grid__item:nth-child(5)::after,
+.partners-grid__item:nth-child(8)::after,
+.partners-grid__item:nth-child(11)::after,
+.partners-grid__item:nth-child(14)::after,
+.partners-grid__item:nth-child(17)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  background-color: var(--gray);
+}
+
+.partners-grid__item:nth-child(17)::after {
+  display: none;
+}
+
+.partners-grid__item:nth-child(2)::before,
+.partners-grid__item:nth-child(2)::after {
+  height: 104px;
+}
+
+.partners-grid__item:nth-child(5)::before,
+.partners-grid__item:nth-child(5)::after {
+  height: 65px;
+}
+.partners-grid__item:nth-child(8)::before,
+.partners-grid__item:nth-child(8)::after {
+  height: 60px;
+}
+
+.partners-grid__item:nth-child(11)::before,
+.partners-grid__item:nth-child(11)::after {
+  height: 65px;
+}
+
+.partners-grid__item:nth-child(14)::before,
+.partners-grid__item:nth-child(17)::before,
+.partners-grid__item:nth-child(14)::after,
+.partners-grid__item:nth-child(17)::after {
+  height: 80px;
+}
+
+
+
+.partners-grid__img {
+  display: block;
+  max-width: 200px;
+  object-fit: contain;
+transform: s;}
+
+.partners__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* hidden */
+.partners-grid__item:nth-child(16),
+.partners-grid__item:nth-child(17),
+.partners-grid__item:nth-child(18) {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+  .partners-grid__item:nth-child(2),
+  .partners-grid__item:nth-child(5),
+  .partners-grid__item:nth-child(8),
+  .partners-grid__item:nth-child(11),
+  .partners-grid__item:nth-child(14),
+  .partners-grid__item:nth-child(17) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .partners-grid__item:nth-child(2)::before,
+  .partners-grid__item:nth-child(5)::before,
+  .partners-grid__item:nth-child(8)::before,
+  .partners-grid__item:nth-child(11)::before,
+  .partners-grid__item:nth-child(14)::before,
+  .partners-grid__item:nth-child(17)::before {
+    display: none;
+  }
+  .partners-grid__item:nth-child(2)::after,
+  .partners-grid__item:nth-child(5)::after,
+  .partners-grid__item:nth-child(8)::after,
+  .partners-grid__item:nth-child(11)::after,
+  .partners-grid__item:nth-child(14)::after,
+  .partners-grid__item:nth-child(17)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .partners {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partners-grid {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    max-height: 430px;
+    overflow: hidden;
+    transition: all .3s;
+  }
+  .partners-grid__item {
+    justify-content: center;
+  }
+  .partners-grid__item:nth-child(3n) {
+    justify-content: center;
+  }
+  .partners-grid_active {
+    max-height: 100%;
+    transition: max-height 2s ease-in-out;
+  }
+
+  .partners-grid__item:nth-child(18) {
+    max-height: 0;
+    padding: 0;
+  }
+}

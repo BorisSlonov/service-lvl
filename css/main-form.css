@@ -1,0 +1,143 @@
+.main-form {
+  position: relative;
+  padding: 70px 35px;
+  width: 100%;
+  max-width: 590px;
+  background-color: var(--light);
+  border-radius: 8px;
+}
+
+.main-form__title {
+  font-size: 24px;
+  text-align: center;
+}
+.main-form__sub-title {
+  display: block;
+  color: var(--gray);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-form__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.main-form__input-descr {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.main-form__input {
+  border: none;
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 2px;
+  background-color: transparent;
+  outline: none;
+}
+
+.main-form__item_btn {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.main-form__item_btn .main-btn__txt {
+  font-size: 16px;
+}
+/* .MultiFile */
+.MultiFile-label {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 14px;
+}
+
+.MultiFile-label:not(:first-child) {
+  margin-top: 10px;
+}
+.submit-request-form input[type="file"] {
+  height: 26px;
+  margin-bottom: 15px;
+  position: absolute;
+  top: -3000px;
+}
+.MultiFile-title {
+  position: relative;
+  margin-right: 7px;
+  padding-left: 34px;
+}
+.MultiFile-title::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 19V5C21 3.9 20.1 3 19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19ZM8.5 13.5L11 16.51L14.5 12L19 18H5L8.5 13.5Z' fill='black'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.MultiFile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.MultiFile-remove {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.MultiFile-remove:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z' fill='black'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.control-group.tal {
+  text-align: left;
+}
+.upload_files_button {
+  font-size: 14px;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  text-decoration: none;
+  text-underline-offset: 2px;
+  margin-bottom: 10px;
+}
+.upload_files_button:hover {
+  text-decoration: none;
+}
+.upload_files_button:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 20H19V18H5V20ZM19 9H15V3H9V9H5L12 16L19 9Z' fill='black'/%3E%3C/svg%3E");
+}
+
+.file_upload_items {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .main-form {
+    padding: 40px 20px;
+  }
+}

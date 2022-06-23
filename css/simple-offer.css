@@ -1,0 +1,71 @@
+.simple-offer {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../img/yellow-bg.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 100px 0;
+}
+.simple-offer__item {
+  flex-basis: 50%;
+}
+
+.simple-offer__item:last-child {
+  margin-top: 100px;
+  margin-right: 70px;
+  margin-left: 70px;
+  max-width: 450px;
+}
+.simple-offer__form {
+  margin-left: 70px;
+  margin-top: -150px;
+}
+
+.simple-offer__text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.simple-offer__contacts {
+  margin-top: 50px;
+}
+
+.simple-offer__contact:last-child {
+  margin-left: 50px;
+}
+
+@media (max-width: 1240px) {
+  .simple-offer__item:last-child {
+    margin-right: 40px;
+  }
+  .simple-offer__form {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .simple-offer {
+    flex-direction: column;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background-image: none;
+  }
+  .simple-offer__item:last-child {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .simple-offer__form {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media(max-width:767px) {
+    .simple-offer__text {
+        font-size: 24px;
+    }
+}
